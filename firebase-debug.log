@@ -1,0 +1,74 @@
+[debug] [2025-04-02T14:44:46.695Z] ----------------------------------------------------------------------
+[debug] [2025-04-02T14:44:46.697Z] Command:       /home/bobby/.nvm/versions/node/v22.13.1/bin/node /home/bobby/.nvm/versions/node/v22.13.1/bin/firebase deploy
+[debug] [2025-04-02T14:44:46.698Z] CLI Version:   14.0.1
+[debug] [2025-04-02T14:44:46.698Z] Platform:      linux
+[debug] [2025-04-02T14:44:46.698Z] Node Version:  v22.13.1
+[debug] [2025-04-02T14:44:46.698Z] Time:          Wed Apr 02 2025 09:44:46 GMT-0500 (Central Daylight Time)
+[debug] [2025-04-02T14:44:46.698Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-02T14:44:46.854Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-02T14:44:46.854Z] > authorizing via signed-in user (tryedd@gmail.com)
+[debug] [2025-04-02T14:44:46.854Z] [iam] checking project advanced-web-leaderboard for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-02T14:44:46.855Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:46.855Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:46.856Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-web-leaderboard:testIamPermissions [none]
+[debug] [2025-04-02T14:44:46.856Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-web-leaderboard:testIamPermissions x-goog-quota-user=projects/advanced-web-leaderboard
+[debug] [2025-04-02T14:44:46.856Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-web-leaderboard:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-02T14:44:47.035Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-web-leaderboard:testIamPermissions 200
+[debug] [2025-04-02T14:44:47.036Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-web-leaderboard:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-02T14:44:47.036Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:47.036Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:47.036Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/advanced-web-leaderboard [none]
+[debug] [2025-04-02T14:44:47.192Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/advanced-web-leaderboard 200
+[debug] [2025-04-02T14:44:47.193Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/advanced-web-leaderboard {"projectId":"advanced-web-leaderboard","projectNumber":"317014929641","displayName":"Advanced Web Leaderboard","name":"projects/advanced-web-leaderboard","resources":{"hostingSite":"advanced-web-leaderboard"},"state":"ACTIVE","etag":"1_6b56cb7b-b2f8-47d4-8d25-73aacbdbde91"}
+[debug] [2025-04-02T14:44:47.993Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:47.993Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:47.993Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites pageToken=&pageSize=10
+[debug] [2025-04-02T14:44:48.560Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites 200
+[debug] [2025-04-02T14:44:48.560Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites {"sites":[{"name":"projects/advanced-web-leaderboard/sites/advanced-web-leaderboard","defaultUrl":"https://advanced-web-leaderboard.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-02T14:44:48.560Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:48.560Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:48.561Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites 
+[debug] [2025-04-02T14:44:48.715Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites 200
+[debug] [2025-04-02T14:44:48.715Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites {"sites":[{"name":"projects/advanced-web-leaderboard/sites/advanced-web-leaderboard","defaultUrl":"https://advanced-web-leaderboard.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-02T14:44:48.715Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:48.715Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:48.716Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/advanced-web-leaderboard/webApps/-/config [none]
+[debug] [2025-04-02T14:44:49.052Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/advanced-web-leaderboard/webApps/-/config 200
+[debug] [2025-04-02T14:44:49.053Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/advanced-web-leaderboard/webApps/-/config {"projectId":"advanced-web-leaderboard","appId":"1:317014929641:web:79af9f3b2cc20e4635c078","storageBucket":"advanced-web-leaderboard.firebasestorage.app","apiKey":"AIzaSyDd6JKctpZljVhgYvr6L9tqiIFuISZAvIk","authDomain":"advanced-web-leaderboard.firebaseapp.com","messagingSenderId":"317014929641","measurementId":"G-7EEJ7RG8QL"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-04-02T14:44:51.027Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:51.027Z] Checked if tokens are valid: true, expires at: 1743608181139
+[debug] [2025-04-02T14:44:51.027Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites/advanced-web-leaderboard [none]
+[debug] [2025-04-02T14:44:51.122Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites/advanced-web-leaderboard 200
+[debug] [2025-04-02T14:44:51.122Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/advanced-web-leaderboard/sites/advanced-web-leaderboard {"name":"projects/advanced-web-leaderboard/sites/advanced-web-leaderboard","defaultUrl":"https://advanced-web-leaderboard.web.app","type":"DEFAULT_SITE"}
+[info]  ⨯ Failed to load next.config.mjs, see more info here https://nextjs.org/docs/messages/next-config-error
+
+[info] 
+
+[info] > Build error occurred
+
+[info] ReferenceError: module is not defined in ES module scope
+    at <unknown> (next.config.mjs:12:3)
+
+[debug] [2025-04-02T14:44:52.052Z] ReferenceError: module is not defined in ES module scope
+    at file:///home/bobby/repos/leader-board/next.config.mjs:12:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async loadConfig (/home/bobby/repos/leader-board/node_modules/next/dist/server/config.js:964:36)
+    at async getConfig (/home/bobby/.nvm/versions/node/v22.13.1/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:474:22)
+    at async build (/home/bobby/.nvm/versions/node/v22.13.1/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:83:59)
+    at async prepareFrameworks (/home/bobby/.nvm/versions/node/v22.13.1/lib/node_modules/firebase-tools/lib/frameworks/index.js:224:33)
+    at async deploy (/home/bobby/.nvm/versions/node/v22.13.1/lib/node_modules/firebase-tools/lib/deploy/index.js:76:9)
+[error] 
+[error] Error: An unexpected error has occurred.

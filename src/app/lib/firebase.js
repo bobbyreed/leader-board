@@ -1,6 +1,5 @@
 // src/lib/firebase.js
 import { initializeApp, getApps } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { db } from './firebase';
 import { 
@@ -29,7 +28,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApps()[0];
-const db = getFirestore(app);
+//Leaving the following commented because I'm not sure that line 4 is sufficient
+    //const db = getFirestore(app);
 const auth = getAuth(app);
 
 // Collection reference
