@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import './globals.css';
 
 export const metadata = {
-  title: 'Next.js Leaderboard',
+  title: 'Classroom Leaderboard',
   description: 'A leaderboard application built with Next.js and Firebase',
 };
 
