@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { db } from '@/lib/firebase';
-import { getTopScores } from '@/lib/firestore';
+import { db } from '../lib/firebase';
+import { getTopScores } from '../lib/firestore';
 import { collection, query, orderBy, limit, onSnapshot } from 'firebase/firestore';
 
 export default function Leaderboard({ limitCount = 10 }) {

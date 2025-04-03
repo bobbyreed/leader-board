@@ -1,9 +1,5 @@
-// src/lib/firebase.js
-import { initializeApp, getApps } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
 import { db } from './firebase';
 import { 
-  getFirestore,
   collection, 
   addDoc, 
   updateDoc, 
@@ -16,34 +12,18 @@ import {
   serverTimestamp 
 } from 'firebase/firestore';
 
-const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
-};
-
-// Initialize Firebase
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApps()[0];
-//Leaving the following commented because I'm not sure that line 4 is sufficient
-    //const db = getFirestore(app);
-const auth = getAuth(app);
-
 // Collection reference
 const leaderboardRef = collection(db, 'leaderboard');
 
 // Add a new score to the leaderboard
 export const addScore = async (userId, username, score) => {
-    return await addDoc(leaderboardRef, {
-      userId,
-      username,
-      score,
-      timestamp: serverTimestamp(),
-    });
-  };
+  return await addDoc(leaderboardRef, {
+    userId,
+    username,
+    score,
+    timestamp: serverTimestamp(),
+  });
+};
 
 // Get top scores from the leaderboard
 export const getTopScores = async (limitCount = 10) => {
@@ -80,5 +60,3 @@ export const deleteScore = async (id) => {
   const scoreRef = doc(db, 'leaderboard', id);
   return await deleteDoc(scoreRef);
 };
-
-export { app, db, auth };

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { addScore } from '@/lib/firestore';
+import { addScore } from '../lib/firestore';
 
 export default function ScoreForm({ userId, username, onScoreAdded }) {
   const [score, setScore] = useState('');
