@@ -19,8 +19,6 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin: 20px;
   box-shadow: #0a0a0a;
   color: var(--foreground);
   background: var(--background);
@@ -59,9 +57,25 @@ h1 {
   color:aliceblue;
 }
 
-.leaderboard-rows{
+.leaderboard-rows {
+  display: flex;
   text-align: center;
   justify-content: space-around;
+  flex-grow: 1;
+}
+
+.leaderboard-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.leaderboard-table {
+  text-align: center;
+  justify-content: space-around;
+  outline: auto;
+  flex-grow: 1;
 }
 
 

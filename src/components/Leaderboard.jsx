@@ -50,7 +50,7 @@ export default function Leaderboard({ limitCount = 10 }) {
         {scores.length === 0 ? (
           <p>No scores to display yet.</p>
         ) : (
-          <table className="w-full border-collapse">
+          <table className="leaderboard-table">
             <thead>
               <tr className="leaderboard-rows">
                 <th>Rank</th>
@@ -60,7 +60,7 @@ export default function Leaderboard({ limitCount = 10 }) {
             </thead>
             <tbody>
               {scores.map((score, index) => (
-                <tr key={score.id} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
+                <tr key={score.id} className="leaderboard-rows">
                   <td>{index + 1}</td>
                   <td>{score.username}</td>
                   <td>{score.score}</td>
