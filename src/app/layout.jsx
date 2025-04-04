@@ -9,7 +9,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
+      //main site HTML page (edit here for static HTML changes to main page)
       <html lang="en">
+        <head>
+        <link rel="stylesheet" href="css/style.css" />
+        </head>
         <body>
           <AuthContextProvider>
             <Navbar />

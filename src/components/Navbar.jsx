@@ -8,12 +8,8 @@ export default function Navbar() {
 
   return (
     <nav className="bg-indigo-600 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold">
-          Leaderboard
-        </Link>
-        
-        <div className="space-x-4">
+      <div className="container mx-auto flex justify-between items-center">      
+        <div className="navbar">
           <Link href="/" className="hover:text-indigo-200">
             Home
           </Link>
